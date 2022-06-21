@@ -6,9 +6,10 @@
 }
 
 .body {
-  background: url("../bg_snk.jpg");
+  background: url("../snake_bg.jpg");
+  /* background: linear-gradient(rgb(227, 236, 227), rgb(245, 245, 107)); */
   min-height: 100vh;
-  background-size: 205vh 48vw;
+  background-size:cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -16,44 +17,48 @@
 }
 #scoreBox {
   position: absolute;
-  top: 9px;
-  right: 150px;
-  font-size: 39px;
+   /* margin: auto; */
+  top: 4px;
+  /* right: 150px; */
+  font-size: 40px;
   font-weight: bold;
   font-family: "New Tegomin", serif;
 }
 #hiscoreBox {
   position: absolute;
-  top: 59px;
-  right: 100px;
+ /* margin: auto; */
+  top: 49px;
+  /* right: 100px; */
   font-size: 39px;
   font-weight: bold;
   font-family: "New Tegomin", serif;
 }
 #board {
-  background: linear-gradient(rgb(227, 236, 227), rgb(245, 245, 107));
-  width: 90vmin;
-  height: 92vmin;
+   background: linear-gradient(rgba(145, 3, 3, 0.993), rgb(219, 7, 42)); 
+  width: 72vmin;
+  /* background-color: green; */
+  margin-top: 66px;
+  height: 72vmin;
   border: 2px solid black;
   display: grid;
-  grid-template-columns: repeat(18, 1fr);
-  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(24, 1fr);
 }
 
 .head {
-  background: linear-gradient(rgb(223, 128, 128), rgb(245, 245, 8));
-  border: 2px solid purple;
-  transform: scale(1.02);
+  background: lightslategray;
+  border: 2px solid black;
+  transform: scale(1..5);
   border-radius: 9px;
 }
 .snake {
-  background-color: purple;
-  border: 0.25vmin solid white;
+  background-color: black;
+ border: 0.25vmin solid rgba(145, 3, 3, 0.993); 
   border-radius: 12px;
 }
 
 .food {
-  background: linear-gradient(red, purple);
+  background: linear-gradient(rgba(245, 211, 19, 0.993), rgb(219, 127, 7)); 
   border: 0.25vmin solid black;
-  border-radius: 8px;
+  border-radius: 50%;
 }

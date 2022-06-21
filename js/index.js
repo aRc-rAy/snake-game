@@ -10,6 +10,7 @@ let lastPaintTime = 0;
 let snakeArr = [{ x: 13, y: 15 }];
 let food = { x: 12, y: 12 };
 
+alert("Press arrow keys to start the game!");
 // game function
 function main(ctime) {
   window.requestAnimationFrame(main);
@@ -29,9 +30,9 @@ function isCollide(snake) {
   }
 
   if (
-    snake[0].x >= 18 ||
+    snake[0].x >= 24 ||
     snake[0].x <= 0 ||
-    snake[0].y >= 18 ||
+    snake[0].y >= 24 ||
     snake[0].y <= 0
   ) {
     return true;
@@ -40,6 +41,7 @@ function isCollide(snake) {
 
 function gameEngine() {
   // updating the snake variable
+  //
   if (isCollide(snakeArr)) {
     gameOverSound.play();
     musicSound.pause();
