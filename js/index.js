@@ -10,7 +10,7 @@ let lastPaintTime = 0;
 let snakeArr = [{ x: 13, y: 15 }];
 let food = { x: 12, y: 12 };
 
-alert("Press arrow keys to start the game!");
+alert("Press arrows keys to start the game!");
 // game function
 function main(ctime) {
   window.requestAnimationFrame(main);
